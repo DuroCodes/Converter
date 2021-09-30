@@ -68,3 +68,11 @@ def ton_convert(value, unit):
     if unit in weights.POUND_LIST: conversionFactor = 2000
     if unit in weights.OUNCE_LIST: conversionFactor = 0.000035274  
     return value*conversionFactor 
+def pound_convert(value, unit):
+    if unit in weights.METRIC_TON_LIST: conversionFactor = 0.907185
+    if unit in weights.KILOGRAM_LIST: conversionFactor = 907.185
+    if unit in weights.GRAM_LIST: conversionFactor = 907185
+    if unit in weights.MILLIGRAM_LIST: conversionFactor = 907200000
+    if unit in weights.POUND_LIST: conversionFactor = 2000
+    if unit in weights.OUNCE_LIST: conversionFactor = 0.000035274  
+    return value*conversionFactor 
